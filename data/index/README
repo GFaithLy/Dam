@@ -1,0 +1,41 @@
+--------------------------------------------------------------------------------
+This directory contains the structural files of the 195 protein-ligand 
+complexes included in the PDBbind coreset v.2013, which are required in the 
+"scoring power" test as well as the "ranking power" test.
+
+Each complex is saved in a subdirectory named after its PDB code: 
+ 
+    e.g. 1bxo/
+ 
+The crystal complex structure from PDB is split into a protein molecule saved in 
+the PDB format and the Tripos Mol2 format: 
+ 
+    e.g. 1bxo_protein.pdb & 1bxo_protein.mol2
+ 
+The ligand molecule in the complex is saved in the Tripos Mol2 format and the 
+MDL SDF format:
+ 
+    e.g. 1bxo_ligand.mol2 & 1bxo_ligand.sdf
+
+Besides, the ligand molecule was optimized in situ and the results are given as: 
+    e.g. 1bxo_ligand_opt.mol2 & 1bxo_ligand_opt.sdf
+
+--------------------------------------------------------------------------------
+
+There are two index files under the "index/" directory, which summarize the
+basic information of the PDBbind coreset v.2013:
+
+"2013_core_data.lst": List of the protein-ligand complexes in the core set, 
+providing formatted binding data by protein clusters.
+ 
+"2013_core_name.lst": List of the protein-ligand complexes in the core set, 
+providing EC number and name of the protein in each complex.
+
+--------------------------------------------------------------------------------
+For more information on the CASF-2013 benchmark, please refer to:
+
+(1) Li, Y. et al. J. Chem. Inf. Model., 2014, 54(6), 1700-1716.
+(2) Li, Y. et al. J. Chem. Inf. Model., 2014, 54(6), 1717-1736.
+
+Latest update: Dec 2015 by Prof. Renxiao Wang
+
